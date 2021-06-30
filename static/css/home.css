@@ -1,0 +1,273 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "roboot", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  font-size: 17px;
+  font-weight: 400;
+  background-color: white;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  z-index: 999;
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container ul {
+  display: flex;
+  color: #b5b5b5;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  align-items: center;
+  height: 44px;
+  line-height: 25px;
+  cursor: pointer;
+}
+
+.header-container ul li:hover {
+  color: #f5f5f7;
+  transition: 0.1s ease-in;
+}
+
+.header-container ul:last-child {
+  display: none;
+}
+
+.header-container ul li {
+  display: flex;
+  align-items: center;
+}
+
+.header-information {
+  display: flex;
+  background-color: whitesmoke;
+  padding-top: 54px;
+  width: 100%;
+}
+
+.header-information span {
+  display: flex;
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+  height: 44px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+}
+
+.container-1,
+.container-2 {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 47px;
+}
+
+.container-1-text h2,
+.container-2-text h2 {
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container-1-text h3,
+.container-2-text h3 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.container-1-text div,
+.container-2-text div {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.container-1-text div p,
+.container-2-text div p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  width: 100%;
+}
+
+.container-1-link,
+.container-2-link {
+  display: flex;
+}
+
+.container-1-link a,
+.container-2-link a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #06c;
+  cursor: pointer;
+  margin: 15px;
+  opacity: 0.9;
+}
+
+.container-1-img,
+.container-2-img {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-1-img img,
+.container-2-img img {
+  width: 100%;
+}
+
+.container-2 {
+  background-color: #000000;
+  height: 624px;
+  color: rgb(245, 245, 247);
+  margin-top: 12px;
+  padding-top: 50px;
+}
+
+.container-2-text h3 {
+  color: #fbfbfd;
+  font-weight: 300px;
+  padding-bottom: 10px;
+}
+
+.container-2-text div p {
+  color: #86868b;
+  margin-top: 0.4em;
+}
+
+.container-2-link a {
+  color: #2997ff;
+}
+
+.container-2-img {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container-2-img img {
+  height: 100%;
+}
+
+.image-container {
+  display: flex;
+  padding-top: 24px;
+}
+
+.image-container-1,
+.image-container-2 {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.image-container-text {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image-container-img {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container-text h4 {
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-top: 53px;
+  text-align: center;
+}
+
+.image-container-text h5 {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.016;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.image-container-text a {
+  color: #2997ff;
+}
+
+.image-container-tv,
+.image-container-tv h5 {
+  color: #f5f5f7;
+}
+
+@media (max-width: 768px) {
+  .header-container ul:first-child {
+    display: none;
+  }
+
+  .header-container ul:last-child {
+    display: flex;
+  }
+
+  .header-container ul li i::before {
+    padding: 12px;
+  }
+
+  .header-information {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .header-information span {
+    padding: 10px;
+  }
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-container-1,
+  .image-container-2 {
+    width: 100%;
+  }
+
+  .image-context {
+    top: 20%;
+  }
+
+  .container-1,
+  .container-2 {
+    display: flex;
+  }
+
+  .image-container-1,
+  .image-container-2 {
+    margin: 0px;
+  }
+}
